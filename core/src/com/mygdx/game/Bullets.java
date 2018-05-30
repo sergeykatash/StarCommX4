@@ -38,7 +38,7 @@ public class Bullets {
     }
 
     public Bullets(){
-        imgBullet = new Texture("bukket20.tga");
+        imgBullet = new Texture("bullet20.tga");
         bullets = new Bullet[100];
         for (int i = 0; i < bullets.length; i++){
             bullets[i] = new Bullet();

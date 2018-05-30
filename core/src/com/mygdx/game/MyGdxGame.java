@@ -11,6 +11,7 @@ public class MyGdxGame extends ApplicationAdapter {
 	Background background;
 	Hero hero;
 	Asteroids asteroids;
+	Bullets bullets;
 
 	@Override
 	public void create() {
@@ -18,6 +19,7 @@ public class MyGdxGame extends ApplicationAdapter {
 		background = new Background();
 		hero = new Hero();
 		asteroids = new Asteroids();
+		bullets = new Bullets();
 	}
 
 	@Override
@@ -29,6 +31,7 @@ public class MyGdxGame extends ApplicationAdapter {
 		background.render(batch);
 		hero.render(batch);
 		asteroids.render(batch);
+		bullets.render(batch);
 		batch.end();
 	}
 
@@ -36,5 +39,6 @@ public class MyGdxGame extends ApplicationAdapter {
 		background.update();
 		hero.update();
 		asteroids.update();
+		bullets.update();
 	}
 }

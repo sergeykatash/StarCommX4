@@ -34,6 +34,7 @@ public class Asteroids {
             if (position.x < -imgAsteroid.getWidth()){
                 recreate();
             }
+            hitBox.setPosition(position);
         }
     }
 
